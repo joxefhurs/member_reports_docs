@@ -14,8 +14,7 @@ Welcome to the **ForesightFin Member Reports API** documentation. This API provi
     - [5. Get Account Summary](#5-get-account-summary)
 4. [Error Handling](#error-handling)
 5. [Testing](#testing)
-6. [Examples](#examples)
-7. [Contact & Support](#contact--support)
+6. [Contact & Support](#contact--support)
 
 ---
 
@@ -175,19 +174,15 @@ Retrieve an account summary for a member that includes balances for savings, sha
     - **Content:**
       ```json
       {
-          "savingsBalance": 15000.0,
-          "sharesBalance": 1000.0,
-          "depositsBalance": 5000.0,
+          "savingsBalance": 400000,
+          "sharesBalance": 50000,
+          "depositsBalance": 0,
           "outstandingLoans": [
               {
-                  "loanId": 101,
-                  "loanDescription": "Emergency Loan",
-                  "outstandingAmount": 4200.0
-              },
-              {
-                  "loanId": 102,
-                  "loanDescription": "Personal Loan",
-                  "outstandingAmount": 1800.0
+                  "loanId": 23523,
+                  "loanDescription": "MKOPO-VIFAA",
+                  "outstandingPrincipal": 1075000,
+                  "outstandingInterest": 0
               }
           ]
       }
@@ -231,6 +226,6 @@ For testing purposes, you can use the following phone numbers to retrieve member
 
 ## Contact & Support
 
-For any questions or support related to the ForesightFin Member Reports API, please contact developer.
+For any questions or support related to the ForesightFin Member Reports API, please contact the developer.
 
 Thank you for using the ForesightFin Member Reports API!
